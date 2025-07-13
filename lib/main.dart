@@ -1,4 +1,5 @@
 import 'package:custompainterpractice/beginner/circle.dart';
+import 'package:custompainterpractice/beginner/rectangle_with_border.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -76,9 +77,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: CustomPaint(
-      painter: Circle(Theme.of(context).colorScheme.inversePrimary, 60),
+        painter: RectangleWithBorder(color: Color(0xff4ABDB1), borderRadius: 4),
       child: SizedBox(
-        width: 400,
+        width: MediaQuery.sizeOf(context).width,
         height: 400,
       ),
     ),
