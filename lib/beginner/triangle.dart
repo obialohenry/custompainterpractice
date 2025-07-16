@@ -10,7 +10,7 @@ class Triangle extends CustomPainter {
   
     path.moveTo(0, size.height);
     path.lineTo(size.width, size.height);
-    path.lineTo(size.width /2, -size.height);
+    path.lineTo(size.width / 2, -size.height / 2);
     path.close();
     canvas.drawPath(
       path,
