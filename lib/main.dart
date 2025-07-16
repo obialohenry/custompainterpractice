@@ -1,5 +1,4 @@
-import 'package:custompainterpractice/beginner/circle.dart';
-import 'package:custompainterpractice/beginner/rectangle_with_border.dart';
+import 'package:custompainterpractice/beginner/triangle.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -76,13 +75,13 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: CustomPaint(
-        painter: RectangleWithBorder(color: Color(0xff4ABDB1), borderRadius: 4),
-      child: SizedBox(
-        width: MediaQuery.sizeOf(context).width,
-        height: 400,
+      body: Center(
+        child: CustomPaint(
+          painter: Triangle(color: Color(0xffF39C12)),
+          child: SizedBox(
+          width: 150, height: 100),
+        ),
       ),
-    ),
    
     );
   }
